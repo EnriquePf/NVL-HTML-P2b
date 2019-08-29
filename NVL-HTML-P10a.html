@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+  </head>
+  <body>
+<p align="left">Para nosotros es esencial la satisfacción de nuestros clientes.<br>
+Comparte con nosotros tú experiencia con nuestros productos.</p><br>
+
+<form method="post" action="miservidor.php">
+
+     <div> <!--codigo postal-->
+       <label for=”cp”>Código Postal:</label>
+       <input id=”cp” type=”number”>
+     </div><br>
+   
+     <div><!--Nivel de satisfacción con el producto-->
+        <label for=”satisfaction”>Nivel de satisfacción con el producto:</label>       
+        <select id=”satisfaction”>
+         <option value=”1”>1</option>
+         <option value=”2”>2</option>
+         <option value=”3”>3</option>
+         <option value=”4”>4</option>
+         <option value=”5”>5</option>
+	</select>
+     </div><br>
+
+     <div><!--Email del usuario que ha consumido el producto-->
+	<label for="email">Email del usuario que ha consumido el producto:</label>
+	<input id="email" type="text">     
+     </div><br>
+
+     <div><!--Puntos positivos del producto-->
+	<label for=”positivo”>Puntos positivos del producto:</label>
+	<textarea id=”positivo”></textarea>
+     </div><br>
+
+
+     <div><!--Puntos negativos-->
+	<label for="negativo">Puntos negativos</label>
+	<textarea id="negativo"></textarea>
+     </div><br>
+
+    <div> <!--La notación utilizada NT,BI,AP,IF hace referencia a como se indicaban las calificaciones en el colegio-->
+       <label for=”acabados”>Acabados del producto:</label>
+       <select id=”acabados”>
+         <option value=”NT”>Excelente</option>
+         <option value=”BI”>Bueno</option>
+         <option value=”AP”>Regular</option>
+         <option value="IF">Pésimo</option>
+       </select>
+   </div><br>
+
+   <div>
+	<label for="usabilidad">Facilidad de uso:</label>
+	<select id= "usabilidad">
+         <option value=”NT”>Excelente</option>
+         <option value=”BI”>Bueno</option>
+         <option value=”AP”>Regular</option>
+         <option value="IF">Pésimo</option>
+	</select>
+   </div><br>
+
+   <div>
+	<label for="calidadprecio">Relación Calidad/Precio:</label>
+	<select id="calidadprecio">
+         <option value=”NT”>Excelente</option>
+         <option value=”BI”>Bueno</option>
+         <option value=”AP”>Regular</option>
+         <option value="IF">Pésimo</option>
+	</select>
+   </div><br>
+
+   <div>
+	<label for="bateria">Duración de la batería:</label>
+	<select id="bateria">
+         <option value=”NT”>Excelente</option>
+         <option value=”BI”>Bueno</option>
+         <option value=”AP”>Regular</option>
+         <option value="IF">Pésimo</option>
+	</select>
+   </div><br>
+   
+   <input type=”submit” value=”Enviar”>
+</form>
+  </body>
+</html>
+
+

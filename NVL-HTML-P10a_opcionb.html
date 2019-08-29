@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+  </head>
+  <body>
+<p align="left">Para nosotros es esencial la satisfacción de nuestros clientes.<br>
+Comparte con nosotros tú experiencia con nuestros productos.</p><br>
+
+<form method="post" action="miservidor.php">
+
+     <div> <!--codigo postal-->
+       <label for=”cp”>Código Postal:</label>
+       <input id=”cp” type=”number”>
+     </div><br>
+   
+     <div><!--Nivel de satisfacción con el producto-->
+        <label for=”satisfaction”>Nivel de satisfacción con el producto:</label>       
+        <select id=”satisfaction”>
+         <option value=”1”>1</option>
+         <option value=”2”>2</option>
+         <option value=”3”>3</option>
+         <option value=”4”>4</option>
+         <option value=”5”>5</option>
+	</select>
+     </div><br>
+
+     <div><!--Email del usuario que ha consumido el producto-->
+	<label for="email">Email del usuario que ha consumido el producto:</label>
+	<input id="email" type="text">     
+     </div><br>
+
+     <div><!--Puntos positivos del producto-->
+	<label for=”positivo”>Puntos positivos del producto:</label>
+	<textarea id=”positivo”></textarea>
+     </div><br>
+
+
+     <div><!--Puntos negativos-->
+	<label for="negativo">Puntos negativos</label>
+	<textarea id="negativo"></textarea>
+     </div><br>
+
+<!--La notación utilizada NT,BI,AP,IF hace referencia a como se indicaban las calificaciones en el colegio-->
+
+   <div> 
+    <p><strong>Acabados del producto:</strong></p>
+    <input type="radio" name="acabados" value="NT">Excelente
+    <input type="radio" name="acabados" value="BI">Bueno
+    <input type="radio" name="acabados" value="AP">Regular
+    <input type="radio" name="acabados" value="IF">Pésimo
+   </div>
+
+   <div>
+	<p><strong>Facilidad de uso:</strong></p>
+	<input type="radio" name="usabilidad" value="NT">Excelente
+	<input type="radio" name="usabilidad" value="BI">Bueno
+	<input type="radio" name="usabilidad" value="AP">Regular
+	<input type="radio" name="usabilidad" value="IF">Pésimo
+	
+   </div>
+
+   <div>
+	<p><strong>Relación Calidad/Precio:</strong></p>
+	<input type="radio" name="calidadprecio" value="NT">Excelente
+	<input type="radio" name="calidadprecio" value="BI">Bueno
+	<input type="radio" name="calidadprecio" value="AP">Regular
+	<input type="radio" name="calidadprecio" value="IF">Pésimo
+   </div>
+
+   <div>
+	<p><strong>Duración de la batería:</strong></p>
+	<input type="radio" name="bateria" value="NT">Excelente
+	<input type="radio" name="bateria" value="BI">Bueno
+	<input type="radio" name="bateria" value="AP">Regular
+	<input type="radio" name="bateria" value="IF">Pésimo
+   </div><br>
+   
+   <input type=”submit” value=”Enviar”>
+</form>
+  
+  </body>
+</html>
+
+
