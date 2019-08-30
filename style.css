@@ -1,0 +1,36 @@
+body {
+   background-color: yellow;
+  
+}
+
+h1 {
+  font-family: Arial;
+  color: blue;
+  text-align: center;
+}
+
+p {
+
+  font-family: Helvetica;
+  color: black;
+
+}
+
+table {
+
+   width: 25%;
+   border: 1px solid #000000;
+   border-collapse: collapse;
+   
+
+}
+
+th, td, caption  {
+
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid #000000;
+  padding: 0.5em;
+
+  background-color: white;
+}
