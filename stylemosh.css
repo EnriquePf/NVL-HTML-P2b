@@ -1,0 +1,44 @@
+﻿table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    height: 5px;
+    padding: 5px;
+}
+
+th {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 15px;
+    background-color: #DFDFDF;
+}
+
+td.degradado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+caption {
+    padding: 25px;
+    background-color: white;
+}
+
+td.imgcelda {
+    width: 80px;
+}
+
+img.fotografia {
+   width: 100%;
+   initial-letter-align:
+}
+
+td.nombre {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
