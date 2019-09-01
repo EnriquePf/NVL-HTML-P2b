@@ -1,0 +1,29 @@
+﻿
+/*Selector descendente. Selecciona los elementos que se encuentran dentro de otros elementos. 
+Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del otro elemento.*/
+
+div p {
+    color: purple;
+}
+
+/*Selector de hijos. Se utiliza para seleccionar un elemento que es hijo directo de otro elemento y se indica mediante el "signo de mayor que" (>)*/
+ul > li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+
+/*Selector adyacent.Se emplea para seleccionar elementos que en el código HTML de la página se encuentran justo a continuación de otros elementos. 
+Su sintaxis emplea el signo + para separar los dos elementos:*/
+h2 + p {
+    font-size: 40px;
+    color: blue;
+}
+
+/*Selector de hermano en general. Permite seleccionar cualquier elemento hermano de otro*/
+
+h1~p {
+    font-style:italic;
+    font-size: 20px; 
+}
