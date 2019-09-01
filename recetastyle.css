@@ -1,0 +1,74 @@
+﻿[class="imagen"] {
+    padding: 2px;
+}
+
+img[class="imagenprincipal"] {
+    border: #CEECF5 10px solid;
+    padding: 5px;
+
+}
+
+
+table {
+    padding: 10px;
+    /*border: black 2px solid;*/
+}
+
+td {
+    padding: 5px;
+}
+
+/* Uso selector de atributo,  [attr*=val] sobre la tabla Las Claves. Selecciona los elementos cuyo atributo attr tenga un valor que contenga value.*/
+table[data*="lasclaves"] {
+    padding: 27px;
+}
+
+[data="ingredientes"] {
+    padding: 50px;
+}
+
+[class="cabecera"] {
+    font-size: 25px;
+}
+
+
+/* Uso selector de atributo,  [attr=val] sobre la tabla las columnas, Las Claves (Izq) e Ingredientes (dcha). Selecciona los elementos cuyo atributo attr tenga exactamente el valor value..*/
+[id="col1izq"] {
+    float: left;
+    background-color: gray;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 2px
+}
+
+[id="col2dcha"] {
+    float: left;
+    background-color:purple;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+[receta="preparacion"] {
+    clear: left;
+}
+
+[receta="gupilada"] {
+    float: left;
+}
+
+[opinion="formulario"] {
+    clear: left;
+}
+
+/* Uso selector de atributo,  [attr^=val] sobre ambas columnas Las Claves e Ingredientes Principales. Selecciona los elementos cuyo atributo attr tenga un valor prefijado  por value.*/
+div[id^="col"] {
+    border: purple 5px solid;
+}
+
+/* Uso selector de atributo,  [attr$=val] sobre Gupilada. Selecciona los elementos cuyo atributo attr cuyo valor tiene el sufijo (seguido) de value.*/
+div[receta$="ada"] {
+    border: #CEECF5 2px solid;
+    padding: 5px;
+}
